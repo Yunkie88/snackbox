@@ -1,7 +1,1 @@
-<<<<<<< HEAD
 hi all
-=======
-hi all
-
-anyone to have coffee?
->>>>>>> parent of c8956b7... pls check
