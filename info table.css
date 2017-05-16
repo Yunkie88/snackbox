@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed|Noto+Sans|PT+Sans|Raleway|Titillium+Web');
+
+*{text-align:center;
+}
+
+h1{ 
+	text-decoration:underline;
+	color:rgb(152, 65, 244);
+	font-size:20px; 
+	font-family: 'Raleway', sans-serif;
+	margin:5px;
+	border:3px solid red;
+	border-radius: 10px;
+	padding:5px;
+}
+
+table{width:580px; 
+	background-color:rgb(255, 255, 255);
+	color: rgb(65, 46, 234);
+	margin:1px;
+	border:1px solid orange;
+	padding:0px;
+}
+
+td{padding:4px;text-align: center;font size:10px; font-family: 'Fira Sans Extra Condensed', sans-serif;
+}
+
+
+h1:hover{background-color:yellow;}
+a:hover {color:blue;
+background-color:yellow;
+border:3px solid blue;
+border-radius: 5px;
+padding:5px;}
+a:visited{color:red;}
+
+
+
+p{
+	color:rgb(35, 37, 40);
+    font-family:'Fira Sans Extra Condensed', sans-serif;
+}
+body{background-image: url(http://graphicdesignjunction.com/wp-content/uploads/2012/10/background+pattern+design+33.jpg);}

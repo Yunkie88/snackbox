@@ -1,0 +1,34 @@
+<html>
+<head>
+<script type="text/javascript" src="jscode.js"></script>
+</head>
+<body>
+<input type="button" onclick="sayFood()" value="Press Here">
+<input type="button" onclick="print()" value="Choose Places">
+<script type="text/javascript">
+var name = "Yunkie"
+// alert("Hello,"+ name);
+
+
+function print (){
+	var places = ["KL","SELANGOR","PJ","CYBERJAYA"];
+alert(places[1])
+// alert(places.length)
+}
+
+function sayFood (){
+	var food = ["Hotdog","Burger","Fries","Nuggets"];
+	alert("Hello, I am "+ name + "I like to eat "+ food[3] +" How about you?")
+	alert(food.length)
+	alert("Subtotal"+ subtotal);
+}
+
+var subtotal = (13+1)*5;
+var shipping = 0.5*(13+1);
+var total = subtotal + shipping;
+alert("Subtotal"+ subtotal);
+
+</script>
+</body>
+
+</html>
