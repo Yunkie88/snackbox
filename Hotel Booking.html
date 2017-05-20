@@ -1,0 +1,28 @@
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+
+function Hotel(name,rooms,booked){
+	this.name = name
+	this.rooms= rooms
+	this.booked= booked
+	this.checkAvailability=function (){
+		return this.rooms- this.booked;
+	};
+
+	}
+
+	var hotel = new Hotel ("Little Cottage",100,50)
+	var hotel2 = new Hotel ("Lexis Hibiscus",500,50)
+	
+	console.log(hotel2);
+	console.log("Hotel: " + hotel2.name + ", available rooms:" + hotel2.checkAvailability());
+
+
+
+
+</script>
+</body>
+</html>

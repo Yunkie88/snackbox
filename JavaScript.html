@@ -8,14 +8,17 @@
 <input type="button" onclick="total()" value="Total">
 <input type="button" onclick="Score()" value="Score">
 <input type="button" onclick="loop()" value="Loop">
-<input type="button" onclick="hash()" value="Christmas Tree">
+<input type="button" onclick="hash1()" value="Christmas Tree">
+<input type="button" onclick="a()" value="Mathematics">
+<input type="button" onclick="b()" value="Get Size">
+<input type="button" onclick="global ()" value="Global">
 
 <script type="text/javascript">
 
 //Array
 function print (){
 	var places = ["KL","SELANGOR","PJ","CYBERJAYA"];
-alert(places[1])
+alert(places[1] + "\n"+ places[2])
 // alert(places.length)
 }
 
@@ -68,25 +71,23 @@ function loop (){
 var scores=[24,32,17];
 var arrayLength= scores.length;
 var roundNumber= 0;
-var msg='Bingo!'
+var msg='Bingo! '
 
 for(var i=2; i<arrayLength; i++){
 	roundNumber=(i+1);
 	msg += 'Round' + roundNumber+ ':';
-	msg += scores[i] + "<br>";}
-	
-console.log(msg);}
-
-// For Loop Exercise
-
-
-
-
-for (var i=1;i<1001;i++){
-	hash(i)
+	msg += scores[i];}
+	console.log(msg);
 }
 
+// For Loop Exercise
+function hash1 () {
+var hashes = 100
 
+for (var i=1;i<hashes;i++){
+     hash (i)
+}
+}
 function hash (hashes){
 var msg = ''
 
@@ -95,6 +96,60 @@ for(var i=0; i<hashes; i++){
 console.log(msg);
 }
 
+// // minMaxAvg
+
+
+function minMaxAvg (numbers){
+var min = Math.min.apply(null, numbers);
+var max = Math.max.apply(null, numbers);
+var sum = 0;
+
+for (var i=0; i<numbers.length; i++){
+	sum= sum + numbers [i];
+}
+var avg = sum/numbers.length;
+
+return [min,max,avg];}
+
+function a (){
+var numbers = [124,423,2,234,1231,123,1212];
+var formula = minMaxAvg (numbers)
+
+console.log(formula);
+
+}
+
+
+
+
+var size = getSize (9,8,10);
+var area = size [0];
+var volume= size [1];
+
+function getSize (width,height,depth){
+	var area = width * height;
+	var volume = width * height * depth;
+	var size = [area,volume];
+	return size;
+}
+
+function b () {
+var size = getSize (9,8,10);
+var area = size [0];
+var volume= size [1];
+console.log ("Area: " + area);
+console.log ("Volume: " + volume);
+console.log ("Size: " + size);
+}
+
+
+var x = "global"
+function global (){
+	var x ="local"
+	console.log(x)
+}
+global();
+console.log(x);
 
 </script>
 </body>
