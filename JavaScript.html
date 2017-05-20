@@ -5,11 +5,14 @@
 <body>
 <input type="button" onclick="sayFood()" value="Press Here">
 <input type="button" onclick="print()" value="Choose Places">
+<input type="button" onclick="total()" value="Total">
+<input type="button" onclick="Score()" value="Score">
+<input type="button" onclick="loop()" value="Loop">
+<input type="button" onclick="hash()" value="Christmas Tree">
+
 <script type="text/javascript">
-var name = "Yunkie"
-// alert("Hello,"+ name);
 
-
+//Array
 function print (){
 	var places = ["KL","SELANGOR","PJ","CYBERJAYA"];
 alert(places[1])
@@ -19,14 +22,79 @@ alert(places[1])
 function sayFood (){
 	var food = ["Hotdog","Burger","Fries","Nuggets"];
 	alert("Hello, I am "+ name + "I like to eat "+ food[3] +" How about you?")
-	alert(food.length)
-	alert("Subtotal"+ subtotal);
-}
+	alert(food.length) }
 
+function total(){	
 var subtotal = (13+1)*5;
 var shipping = 0.5*(13+1);
 var total = subtotal + shipping;
-alert("Subtotal"+ subtotal);
+alert("Subtotal "+ shipping);}
+
+//Statements
+function Score (){
+var score=15+30; // Score
+var msg; // Message
+if (score >=20) {//if score is 50 or higher
+	msg= 'Congratulations!';
+msg+=' Proceed to the next round.';
+alert(msg);
+}
+else {msg='Sorry, you are out!';
+msg+=' Please try next time.';console.log(msg)}}
+
+//Switch
+function level (){
+var level=5; // Level
+var msg; // Message
+switch(level){
+	case 1: 
+	msg='Good Job. Please proceed to the next level.';
+	break;
+	case 2:
+	msg='Nice. Keep Going. Level 3 is waiting you!';
+	break;
+	case 3:
+	msg= 'You are superb! Mission Accomplished!';
+	break;
+
+default:
+msg='Thank you. Good Luck for the next try.';
+break;}
+console.log(msg)
+}
+
+//For Loop
+function loop (){
+var scores=[24,32,17];
+var arrayLength= scores.length;
+var roundNumber= 0;
+var msg='Bingo!'
+
+for(var i=2; i<arrayLength; i++){
+	roundNumber=(i+1);
+	msg += 'Round' + roundNumber+ ':';
+	msg += scores[i] + "<br>";}
+	
+console.log(msg);}
+
+// For Loop Exercise
+
+
+
+
+for (var i=1;i<1001;i++){
+	hash(i)
+}
+
+
+function hash (hashes){
+var msg = ''
+
+for(var i=0; i<hashes; i++){
+   msg += '#';}
+console.log(msg);
+}
+
 
 </script>
 </body>
