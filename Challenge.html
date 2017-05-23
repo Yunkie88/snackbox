@@ -1,0 +1,50 @@
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Challenge</title>
+</head>
+<body>
+<script type="text/javascript">
+function longestWord(str) {
+    var words = str.split(" ");
+    var x = 7;
+    var msg = " " ;
+  
+    for (var i = 0; i <words.length; i++) {
+        if (x < words[i].length) {
+          // x= words [i].length ;
+          msg += words [i] + "\n" +"\n"
+        }
+ 
+        // else if (words[i].length<y){
+        //   y=words[i].length
+        // }
+    }
+    return msg;
+}
+
+document.write (longestWord("The quick brown fox jumped over the lazy dog") +  "<br>");
+document.write (longestWord("May the force be with you")+  "<br>");
+document.write (longestWord("Google do a barrel roll") + "<br>");
+document.write (longestWord("Let's go to Trillion this Saturday"));
+
+
+// UpperCase of A Letter 
+
+function ucFirstAllWords( str )
+{
+    var pieces = str.split(" ");
+    for ( var i = 0; i < pieces.length; i++ )
+    {
+        var j = pieces[i].charAt(0).toUpperCase();
+        pieces[i] = j + pieces[i].substr(1);
+    }
+    return pieces.join(" ");
+}
+
+document.write (ucFirstAllWords("I'm a little tea pot"));
+}
+</script>
+</body>
+</html>

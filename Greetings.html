@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Greetings</title>
+</head>
+<body>
+<script type="text/javascript">
+
+
+var date = new Date();
+var hour = date.getHours();
+// var x = document.getElementById ("<h1>")
+var msg;
+    if (hour < 12) 
+      {msg = "Good Morning";
+      }
+    else if (hour < 19 ) 
+      {msg ="Good Afternoon";
+      }
+    else if (hour < 23) 
+      {msg ="Good Evening";
+      }
+
+    else if (hour >= 23)
+      {msg = "Good Night";
+      }
+
+// document.getElementById ( x  + "<font color='purple'>" + msg + "</font>"); 
+
+console.log (msg)
+
+</script>
+
+</body>
+</html>
