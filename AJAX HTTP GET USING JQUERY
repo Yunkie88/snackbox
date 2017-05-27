@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>AJAX HTTP GET (JQUERY) </title>
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.js"></script>
+<body>
+<div id ="sample">
+<button type = "button" onclick ="loadDoc()">Load</button>
+</div>
+
+<script type="text/javascript">
+function loadDoc (){
+$(document).ready(function(){
+	$.getJSON("https://sheetsu.com/apis/v1.0/3c95a04ca3f7",
+function (json,status){
+	for (i=0; i<json.length; i++){
+         document.getElementById("personaltable").innerHTML +="<tr><td>" + json[i].Name + "</td>" + "<td>" + json [i].Email + "</td></tr>" ;
+	}
+});
+});
+}
+</script>
+<table border="1" id="personaltable">
+</table>
+</head>
+</body>
+</html>

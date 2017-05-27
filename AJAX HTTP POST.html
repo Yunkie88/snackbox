@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>AJAX</title>
+</head>
+
+<body>
+<div id ="sample">
+<button type = "button" onclick ="loadDoc()">Load</button>
+</div>
+
+<script type="text/javascript">
+function loadDoc () {
+  var xhttp= new XMLHttpRequest();
+    xhttp.onreadystatechange = function (){
+
+      if(this.readyState == 4 && this.status == 200)
+       // {var json = JSON.parse (this.responseText); 
+       // document.getElementById ("sample").innerHTML +="Email:" + json.results [0].email + "<br>"
+       // document.getElementById ("sample").innerHTML +="Name: " + json.results [0].name.first + " "+ json.results[0].name.last +  "<br>"
+       // document.getElementById ("sample").innerHTML +="Date of Birth: " + json.results [0].dob + "<br>"
+       //  document.getElementById ("sample").innerHTML +="Phone No: " + json.results [0].phone + "<br>"
+       //   document.getElementById ("sample").innerHTML +="Address: " + json.results [0].location.street + " " + json.results[0].location.postcode + " " + json.results [0].location.city + " " + json.results [0].location.state + "<br>"
+       //    document.getElementById ("sample").innerHTML +="Image: " +'<img src = "'+ json.results [0].picture.large+'"/>'
+          // {document.getElementById ("sample").innerHTML += this.responseText; // AJAX
+         {alert ("Succesful");
+     }
+    };
+var body =   '{"Name ": "YVON","IC": "68102911020","Address 1": " 13 JALAN EQUINE 6B", "Address 2": "TAMAN EQUINE","City": "SERI KEMBANGAN","Postcode": "43300","State": "SELANGOR","Ctc No": "019-9891268","Email Address": "yvonchye@gmail.com","Package": "BIZ 100"}'
+ 
+    xhttp.open ("POST", "https://sheetsu.com/apis/v1.0/3c95a04ca3f7", true);
+    xhttp.setRequestHeader ("Content-type","application/json")
+    xhttp.send (body);
+}
+    
+  
+
+
+</script>
+
+</body>
+</html>

@@ -3,32 +3,10 @@
 <head>
 <meta charset="utf-8"/>
 <title>Yunkie's Resume</title>
-<script type="text/javascript">
- var xhttp= new XMLHttpRequest();
-    xhttp.onreadystatechange = function (){
-
-      if(this.readyState == 4 && this.status == 200)
-       {var json = JSON.parse (this.responseText); 
-       document.getElementById ("email").innerHTML += json.results [0].email + "<br>"
-       document.getElementById ("name.first").innerHTML += json.results [0].name.first + " "+ json.results[0].name.last +  "<br>"
-       document.getElementById ("email").innerHTML +="Date of Birth: " + json.results [0].dob + "<br>"
-        document.getElementById ("email").innerHTML +="Phone No: " + json.results [0].phone + "<br>"
-         document.getElementById ("location.city").innerHTML += json.results [0].location.street + " " + json.results[0].location.postcode + " " + json.results [0].location.city + " " + json.results [0].location.state + "<br>"
-          document.getElementById ("image").innerHTML +='<img src = "'+ json.results [0].picture.large+'"/>'
-               }
-    };
-
-    xhttp.open ("GET", "https://www.randomuser.me/api", true);
-    xhttp.send ();
-
-</script>
 <style>
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed|Noto+Sans|PT+Sans|Raleway|Titillium+Web');
-
-
 *{text-align:center;
 }
-
 h1{ 
 	text-decoration:underline;
 	color:rgb(152, 65, 244);
@@ -39,7 +17,6 @@ h1{
 	border-radius: 10px;
 	padding:5px;
 }
-
 table{width:580px; 
 	background-color:rgb(255, 255, 255);
 	color: rgb(65, 46, 234);
@@ -47,11 +24,8 @@ table{width:580px;
 	border:1px solid orange;
 	padding:0px;
 }
-
 td{padding:4px;text-align: center;font size:10px; font-family: 'Fira Sans Extra Condensed', sans-serif;
 }
-
-
 h1:hover{background-color:yellow;}
 a:hover {color:blue;
 background-color:yellow;
@@ -59,9 +33,6 @@ border:3px solid blue;
 border-radius: 5px;
 padding:5px;}
 a:visited{color:red;}
-
-
-
 p{
 	color:rgb(35, 37, 40);
     font-family:'Fira Sans Extra Condensed', sans-serif;
@@ -72,8 +43,7 @@ body{background-image: url(http://graphicdesignjunction.com/wp-content/uploads/2
 <body>
 	<em><strong><span style="color:rgb(35, 37, 40);">About Me? </em></strong></span><a href="https://ishoppe.my">Click Here</a><br/><br/>
 <br/>
-	<center><div id ="image"></div>
-	</center>
+	<center><img alt="photo" src="https://scontent-sin6-1.xx.fbcdn.net/v/t1.0-9/13592745_10205454811524367_1803855335843151994_n.jpg?oh=6ae155490c3d619243e4fec976517755&oe=59B11DA6" width="300"/></center>
 
 <center><p style="font-family: 'Titillium Web', sans-serif;
          font-size:40px;color:rgb(244, 65, 184);">YUNKIE <span style="font-family: 'Noto Sans', sans-serif;font-size:38px;color:rgb(35, 37, 40);"><em>TEH</em></span></p></center><br/>
@@ -83,16 +53,15 @@ body{background-image: url(http://graphicdesignjunction.com/wp-content/uploads/2
 <table border="1" >
 <tr>
 <td>Name</td>
-<td><span id = "name.first" ></span></td>
+<td>TEH SHIN LE</td>
 </tr>
 <tr>
 <td>Address</td>
-<td><span id= "location.city">
- </span> <span id= "location.state"> </span> </td>
+<td>Taman Equine, Selangor</td>
 </tr>
 <tr>
 <td>Email Address</td>
-<td><span id = "email"> </span> </td>
+<td>yunkie.vnet@gmail.com</td>
 </tr>
 <tr>
 <td>Nationality</td>

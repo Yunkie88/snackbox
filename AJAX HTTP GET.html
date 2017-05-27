@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>AJAX</title>
+<body>
+<div id ="sample">
+<button type = "button" onclick ="loadDoc()">Load</button>
+</div>
+
+<script type="text/javascript">
+function loadDoc () {
+  var xhttp= new XMLHttpRequest();
+    xhttp.onreadystatechange = function (){
+
+      if(this.readyState == 4 && this.status == 200)
+       {var json = JSON.parse (this.responseText); 
+      document.getElementById ("sample").innerHTML += "<h1> Personal Particulars </h1>"
+      document.getElementById("personaltable").innerHTML +="<tr><th>"+ "Name" + "</th>" + "<th>" + "Email" + "</th></tr>" 
+
+      for (i=0; i<json.length; i++){
+         document.getElementById("personaltable").innerHTML +="<tr><td>" + json[i].Name + "</td>" + "<td>" + json [i].Email + "</td></tr>" ;
+      }
+ 
+   
+       // document.getElementById ("sample").innerHTML +="Name: " + json.results [0].name.first + " "+ json.results[0].name.last +  "<br>"
+       // document.getElementById ("sample").innerHTML +="Date of Birth: " + json.results [0].dob + "<br>"
+       //  document.getElementById ("sample").innerHTML +="Phone No: " + json.results [0].phone + "<br>"
+       //   document.getElementById ("sample").innerHTML +="Address: " + json.results [0].location.street + " " + json.results[0].location.postcode + " " + json.results [0].location.city + " " + json.results [0].location.state + "<br>"
+       //    document.getElementById ("sample").innerHTML +="Image: " +'<img src = "'+ json.results [0].picture.large+'"/>'
+          // {document.getElementById ("sample").innerHTML += 
+     }
+    };
+ 
+    xhttp.open ("GET", "https://sheetsu.com/apis/v1.0/3c95a04ca3f7", true);
+    xhttp.send ();
+}
+</script>
+</head>
+
+<table border="1" id="personaltable">
+</table>
+
+
+</body>
+</html>
