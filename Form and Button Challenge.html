@@ -1,0 +1,54 @@
+<html>
+<head>
+<script type="text/javascript" src="jscode.js"></script>
+</head>
+<body>
+
+  Numbers: <input type="text" placeholder="Put in a value" value="" id="lolz"/> <input type="button" onclick="submit ()" value="Calculate"><br><br>
+
+  MinMaxAvg: <input type="text" value="" id= "lolz1"/> <br><br>
+
+<script type="text/javascript">
+
+function a(){
+var str = document.getElementById('lolz').value;
+var res = str.split(",");
+	console.log(res);
+}
+
+function submit (){
+	var str = document.getElementById('lolz').value;
+	var res = str.split(",");
+	var msg =[ ] ;
+	for (i=0; i<res.length;i++){
+     msg[i] = parseInt(res[i]); }; 
+     var formula = minMaxAvg (msg);
+	document.getElementById('lolz1').value="Min: " + formula [0] + "\n" + " Max: " + formula [1] + "\n" + " Avg: " + formula [2]
+}
+
+
+
+function minMaxAvg (numbers){
+var min = Math.min.apply(null, numbers);
+var max = Math.max.apply(null, numbers);
+var sum = 0;
+
+for (var i=0; i<numbers.length; i++){
+	sum= sum + numbers [i];
+}
+var avg = sum/numbers.length;
+
+return [min,max,avg];}
+
+// function submit (){
+// // var numbers = [124,423,2,234,1231,123,1212];
+// var formula = minMaxAvg (numbers)
+
+// console.log(formula);
+
+
+
+</script>
+</body>
+
+</html>
