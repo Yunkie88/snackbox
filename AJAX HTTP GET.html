@@ -19,8 +19,9 @@ function loadDoc () {
       document.getElementById("personaltable").innerHTML +="<tr><th>"+ "Name" + "</th>" + "<th>" + "Email" + "</th></tr>" 
 
       for (i=0; i<json.length; i++){
-         document.getElementById("personaltable").innerHTML +="<tr><td>" + json[i].Name + "</td>" + "<td>" + json [i].Email + "</td></tr>" ;
-      }
+        
+                document.getElementById("personaltable").innerHTML +="<tr><td>" + json[i].Name + "</td>" + "<td>" + json [i].Email + "</td></tr>" ;
+      } 
  
    
        // document.getElementById ("sample").innerHTML +="Name: " + json.results [0].name.first + " "+ json.results[0].name.last +  "<br>"
