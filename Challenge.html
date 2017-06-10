@@ -45,6 +45,30 @@ function ucFirstAllWords( str )
 
 document.write (ucFirstAllWords("I'm a little tea pot"));
 }
+
+// Reverse a String 
+
+function reverse(str){
+ 
+    var reversed = [];
+    var msg = ("");
+    for (var i = str.length; i > 0; i--){
+        reversed.push(str.charAt(i-1));
+    }
+
+    for (i = 0; i < str.length ; i++){
+        msg += (reversed[i]);
+
+    }
+  return msg;
+}
+
+
+
+
+document.write (reverse("Hello")+  "<br>");
+document.write (reverse("Howdy")+  "<br>");
+document.write(reverse("Greetings from Earth"));
 </script>
 </body>
 </html>

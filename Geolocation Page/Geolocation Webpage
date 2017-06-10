@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script type="text/javascript" src="geolocation.js"></script>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Muli');
+        *{text-align:center;}
+
+        p{
+          color:rgb(173, 24, 173);
+          font-family:'Muli', sans-serif;
+          font-size:25px;
+}
+</style>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Your page title here :)</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+  <center><h2> Locations </h2></center>
+    <div class="row">
+      <div class="one-third column" >
+        <p> D'Pulze Cyberjaya </p> <br/>
+        <img src= "http://investcyberjaya.com/wp-content/uploads/2014/10/DPulze789.jpg" width="100%"> <br/> 
+        03 123 4567 <br/>
+        Opening Hours: <br/>
+        Mon - Fri: 10:00 - 22:00 <br/>
+        Sat - Sun : 10:00 - 23:00<br/>
+        <id="location1distance">
+        
+        </p>
+       </div>
+
+      <div class="one-third column" >
+        <p>Sunway Pyramid Subang</p> <br/>
+        <img src= "http://www.cuti.my/blog/wp-content/uploads/2015/11/Sunway-Pyramid.jpg" width="100%" height = "300" >
+        03 123 4567 <br/>
+        Opening Hours: <br/>
+        Mon - Fri: 10:00 - 22:00 <br/>
+        Sat - Sun : 10:00 - 23:00<br/>
+        <id="location2distance">
+       
+        </p>
+       </div>
+
+      <div class="one-third column" >
+        <p> KLCC Kuala Lumpur</p> <br/>
+       <img src= "http://www.applehotelbintang.com/wp-content/uploads/2013/01/Shopping-in-Suria-KLCC-2.jpg" width="100%">
+       03 123 4567 <br/>
+        Opening Hours: <br/>
+        Mon - Fri: 10:00 - 22:00 <br/>
+        Sat - Sun : 10:00 - 23:00<br/>
+        <id="location3distance">
+          Distance:
+        </p>
+       </div>
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

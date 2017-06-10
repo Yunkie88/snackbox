@@ -1,0 +1,87 @@
+<html>
+<head>
+
+
+
+
+<script type="text/javascript">
+//Given an array of ints, return number of 9 in an array.
+// function count9 (num){
+  
+//   var amtdigit= 0 ;
+ 
+ 
+//  for (var i=0;i<num.length; i++){
+//       if (num [i] == 9){
+//       amtdigit++}
+ 
+//  }
+//     return amtdigit;
+// }
+
+// console.log (count9([1,9,9,3,9]));
+
+//return true if there is no triples of value (appearing 3 times in a row) 
+
+// function notriples (num){
+
+//  for (var i=0;i<num.length; i++){
+//       if (num [i] == num[i-1] && num[i] == num [i-2]){
+//         return false;
+//       }
+//       }
+//  return true;
+// }
+
+// console.log (notriples([1,2,2,2,2,2,1]));
+
+//create a function to count factorial of a number 
+// function factorial(n) {
+//   if (n==0){
+//     return 1;
+//   }
+
+//   if (n<0){
+//     return undefined;
+//   }
+
+//   if (n>0){
+//   return n*factorial(n-1);}
+// }
+
+// console.log(factorial(9));
+
+//check if a word is palindrome
+// function palindrome (str) {
+  
+//   return str== str.split('').reverse().join('');
+// }
+
+// console.log (palindrome("oreo"));
+
+//accept a string as a parameter and counts the number of vowels within the string
+function countVowels (str){
+  var words = str.split('');
+  var amtvowels= 0 ;
+ 
+ 
+ for (var i=0;i<words.length; i++){
+      if (str[i]== "a" || str [i]== "e" || str[i] == "i" || str[i]=="o"|| str [i]=="u"){
+      amtvowels++}
+ 
+ }
+    return amtvowels;
+}
+
+console.log (countVowels("hospital"));
+
+
+
+
+
+</script>
+</head>
+<body>
+</body>
+
+</html>

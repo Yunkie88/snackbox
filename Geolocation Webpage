@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Your page title here :)</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+  <center><h2> Locations </h2></center>
+    <div class="row">
+      <div class="one-third column" >
+        <p style="font-family: 'Muli', sans-serif;
+         font-size:30px;color:rgb((40, 39, 40));"> D'Pulze Cyberjaya </p> <br/>
+        <img src= "http://investcyberjaya.com/wp-content/uploads/2014/10/DPulze789.jpg" width="300"> <br/> 
+        03 123 4567 <br/>
+        Opening Hours: <br/>
+        Mon - Fri: 10:00 - 22:00 <br/>
+        Sat - Sun : 10:00 - 23:00<br/>
+        Distance: 
+
+       </div>
+      <div class="one-third column" >
+        <p style="font-family: 'Muli', sans-serif;
+         font-size:30px;color:rgb((40, 39, 40));"> Sunway Pyramid Subang</p> <br/>
+        <img src= "http://www.cuti.my/blog/wp-content/uploads/2015/11/Sunway-Pyramid.jpg" width="300">
+       </div>
+      <div class="one-third column" >
+        <p style="font-family: 'Muli', sans-serif;
+         font-size:30px;color:rgb((40, 39, 40));"> KLCC Kuala Lumpur</p> <br/>
+       <img src= "https://media-cdn.tripadvisor.com/media/photo-s/0d/51/69/52/night-view-of-suria-klcc.jpg">
+       </div>
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

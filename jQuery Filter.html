@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>jQuery</title>
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<style>
+.Selected {
+	color:red;
+}
+
+#div2 {
+	width: 200px;
+    border: 1px solid green;
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+}
+</style>
+
+</head>
+
+<body>
+<div>
+<ul>
+<li class = "top"> list item 1</li>
+<li class = "top"> list item 2</li>
+<li class = "middle"> list item 3</li>
+<li class = "middle"> list item 4</li>
+<li class = "bottom"> list item 5</li>
+<li class = "bottom"> list item 6</li>
+</ul>
+</div>
+
+
+<h2> Hi, Yeah! </h2>
+
+
+<div id= "div2">
+<h1><center> Jom Makan </center></h1>
+</div>
+
+<script type="text/javascript">
+$(document).ready (function(){
+  $("li").filter(".middle").addClass("Selected"); 
+  $("li").eq(5).addClass("Selected"); 
+  $("p").find("span").addClass("Selected");
+
+  $("#hide").click(function(){
+	$("p").hide()
+	}); 
+	$("#show").click(function(){
+	$("p").show()
+	}); 
+
+	$("#button").click(function(){
+		$("h2").fadeToggle();
+		$("h2").fadeToggle("slow");
+		$("h2").fadeToggle(3000);
+		$("h2").fadeToggle();
+		$("h2").fadeOut(1000).delay(2000).fadeIn(1000);
+	});
+
+	$("#div2").mouseenter(function(){
+		var div = $("#div2");
+		div.animate({left:'100px'},"slow");
+		div.animate({fontSize:'2em'});
+		div.animate({color:'red'})
+	});
+
+	$("#div2").mouseleave(function(){
+		var div = $("#div2");
+	div.animate( {fontSize:'1em'});
+	div.animate({left:'0px'},"fast");
+	});
+
+	$("#show").click(function(){
+		$("p").hide(10000,function(){
+			alert ("Hidden")
+		});
+
+		});
+
+	
+
+});
+  
+
+
+
+
+</script>
+
+<p>This is a <span> red </span> ball. <br/>
+<span> These are all red words. </span>
+</p>
+<input type="button"  id = "show" value="Show">
+<input type="button"  id = "hide" value="Hide">
+<br/><br/>
+<input type="button"  id = "button" value="Yeah :)">
+
+
+</body>
+</html>

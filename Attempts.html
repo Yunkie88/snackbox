@@ -1,0 +1,40 @@
+<html>
+<head>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+</head>
+<body>
+    <script type="text/javascript">     
+            
+            </script>
+<h1> Guess the number! </h1>
+<p>Enter the number </p>
+<input type="number" value = 1 id ="submit"> 
+<button id ="buttons" onclick="guess()">Key in value </button>
+</body>
+<script>
+var correctNum = Math.floor((Math.random() * 100) + 1);
+var count = 3
+function guess() {
+var inputNum = document.getElementById("submit").value;
+console.log (correctNum)
+    if(correctNum == inputNum) {
+    alert ("Correct");
+    }else if (correctNum < inputNum){
+    count -= 1;
+    alert("Too High" + " You have " + count + " guesses left" );
+ 
+    }else{
+        count -= 1;
+    alert("Too Low" + " You have " + count + " guesses left" )
+ }if (count < 1) {
+document.getElementById("buttons").disabled = true;
+alert("No More Guesses");
+}
+}
+    
+    
+    
+ </script>    
+</html>

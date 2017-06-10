@@ -1,0 +1,41 @@
+<html>
+<head>
+    <script type="text/javascript">
+    </script>
+</head>
+
+<body>
+        
+    <script type="text/javascript">
+
+        function Book(title,author,page) { 
+            this.title=title;
+            this.author=author;
+            this.page=page;
+            this.buy=function(){
+                var msg = "Book Title:"+this.title+"By"+ this.author +"has been purchased";
+                console.log(msg);
+            };
+            
+            this.read=function(){
+                page=page + 1;
+                console.log(page);
+            };
+
+        }
+
+
+        var book1=new Book("Book A","Author A",10);
+        var book2=new Book("Book B","Author B",20);
+
+        book1.buy();
+        book2.buy();
+
+        book1.read();
+        book2.read();
+    
+    
+    </script>
+
+</body>
+</html>
