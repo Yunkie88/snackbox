@@ -11,6 +11,12 @@
           font-family:'Muli', sans-serif;
           font-size:25px;
 }
+
+div.container {
+  background-color: rgb(108, 237, 73);
+  border:1px rgb(12, 12, 9);
+  padding:30px;
+}
 </style>
 
   <!-- Basic Page Needs
@@ -43,28 +49,29 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
+
   <center><h2> Locations </h2></center>
     <div class="row">
       <div class="one-third column" >
         <p> D'Pulze Cyberjaya </p> <br/>
         <img src= "http://investcyberjaya.com/wp-content/uploads/2014/10/DPulze789.jpg" width="100%"> <br/> 
-        03 123 4567 <br/>
+        <span style ="font-size:20px";> 03 8800 9803 </span> <br/>
         Opening Hours: <br/>
         Mon - Fri: 10:00 - 22:00 <br/>
         Sat - Sun : 10:00 - 23:00<br/>
-        <id="location1distance">
+         <span id="location1distance"></span>
         
         </p>
        </div>
 
       <div class="one-third column" >
         <p>Sunway Pyramid Subang</p> <br/>
-        <img src= "http://www.cuti.my/blog/wp-content/uploads/2015/11/Sunway-Pyramid.jpg" width="100%" height = "300" >
-        03 123 4567 <br/>
+        <img src= "http://www.cuti.my/blog/wp-content/uploads/2015/11/Sunway-Pyramid.jpg" width="100%" height = "200" >
+        <span style ="font-size:20px";> 03 7494 3000 </span> <br/>
         Opening Hours: <br/>
         Mon - Fri: 10:00 - 22:00 <br/>
         Sat - Sun : 10:00 - 23:00<br/>
-        <id="location2distance">
+        <span id="location2distance"></span>
        
         </p>
        </div>
@@ -72,12 +79,12 @@
       <div class="one-third column" >
         <p> KLCC Kuala Lumpur</p> <br/>
        <img src= "http://www.applehotelbintang.com/wp-content/uploads/2013/01/Shopping-in-Suria-KLCC-2.jpg" width="100%">
-       03 123 4567 <br/>
+       <span style ="font-size:20px";> 03 2382 2828 </span> <br/>
         Opening Hours: <br/>
         Mon - Fri: 10:00 - 22:00 <br/>
         Sat - Sun : 10:00 - 23:00<br/>
-        <id="location3distance">
-          Distance:
+        <span id="location3distance"></span>
+         
         </p>
        </div>
     </div>
